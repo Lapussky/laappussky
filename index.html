@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="mainlogin.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      overflow: hidden;
+      background: url(image/Technology\ Background\ Video\ Loop\ For\ Website.mp4);
+    }
+
+    * {
+      color: white;
+      box-sizing: border-box;
+    }
+
+    /* style the container */
+    .container {
+      position: relative;
+      padding: 20px 0 30px 0;
+      border-radius: 5px;
+    }
+
+    /* style inputs and link buttons */
+    input,
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      margin: 5px 0;
+      opacity: 0.85;
+      display: inline-block;
+      font-size: 17px;
+      line-height: 20px;
+      text-decoration: none;
+      /* remove underline from anchors */
+    }
+
+    input:hover,
+    .btn:hover {
+      opacity: 1;
+    }
+
+    /* add appropriate colors to fb, twitter and google buttons */
+    .fb {
+      background-color: #3B5998;
+      color: white;
+    }
+
+    .twitter {
+      background-color: #55ACEE;
+      color: white;
+    }
+
+    .google {
+      background-color: #dd4b39;
+      color: white;
+    }
+
+    /* style the submit button */
+    input[type=submit] {
+      background-color: #0a0909;
+      color: rgb(230, 227, 227);
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #858484;
+    }
+
+    /* Two-column layout */
+    .col {
+      float: left;
+      width: 50%;
+      margin: auto;
+      padding: 0 50px;
+      margin-top: 6px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* vertical line */
+    .vl {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      border: 2px solid #6e1e1e;
+      height: 175px;
+    }
+
+    /* text inside the vertical line */
+    .vl-innertext {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #703030;
+      border: 1px solid #696767;
+      border-radius: 50%;
+      padding: 8px 10px;
+    }
+
+    /* hide some text on medium and large screens */
+    .hide-md-lg {
+      display: none;
+    }
+
+    /* bottom container */
+    .bottom-container {
+      text-align: center;
+      background-color: #080707;
+      border-radius: 0px 0px 4px 4px;
+    }
+
+    /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 650px) {
+      .col {
+        width: 100%;
+        margin-top: 0;
+      }
+
+      /* hide the vertical line */
+      .vl {
+        display: none;
+      }
+
+      /* show the hidden text on small screens */
+      .hide-md-lg {
+        display: block;
+        text-align: center;
+      }
+    }
+
+
+    .zd {
+      color: green;
+      font-family:'Courier New', Courier, monospace;
+    }
+
+    .glass{
+      color:green;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .tricks{
+      color: green;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .news{
+      color: green;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .design{
+      color: green;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .social{
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .twiter{
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .github{
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .facebook{
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .instagram{
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .quick{
+      color: green;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .homee{
+      color: green;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+
+    #video-background {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #hero {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+  
+
+  </style>
+</head>
+<body>
+
+  <h2></h2>
+  <p>
+  <div class="container">
+    <form action="homepage.html">
+      <div class="row">
+        <h2 style="text-align:center">
+          <li>შედით სოციალური მედიით ან ტელეფონის ნომრით
+        </h2>
+        </li>
+        </h2>
+
+
+        <div class="vl">
+          <span class="vl-innertext">or</span>
+        </div>
+
+        <div class="col">
+          <a href="#" class="fb btn">
+            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+          </a>
+          <a href="#" class="twitter btn">
+            <i class="fa fa-twitter fa-fw"></i>Login with Twit ter
+          </a>
+          <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+            </i> Login with Google+
+          </a>
+        </div>
+
+        <div class="col">
+          <div class="hide-md-lg">
+            <p>Or sign in manually:</p>
+          </div>
+
+          <input type="text" name="სახელი" placeholder="სახელი" required>
+          <input type="password" name="პაროლი" placeholder="პაროლი" required>
+          <input type="submit" value="Login">
+        </div>
+
+        <body>
+          <div class="footer">
+            <div class="heading">
+              <h2>Welcome to online market<sup></sup></h2>
+            </div>
+            <div class="content">
+              <div class="services">
+                <h4 class="zd">You can see here </h4>
+                <p class="glass">1.Some glasses</a></p>
+                <p class="tricks">2. Some tricks</a></p>
+                <p class="news">3. Some news</a></p>
+                <p class="design">4. Some designs</a></p>
+              </div>
+              <div class="social-media">
+                <h4 class="social">Our social links </h4>
+                <p>
+                 
+                </p>
+                <p>
+                  <a href="#"
+                    ><i class="twiter"> Twitter</a
+                  >
+                </p>
+                <p>
+                  <a href=""
+                    ><i class="github"> Github</a
+                  >
+                </p>
+                <p>
+                  <a href="https://www.facebook.com/giorgi.lapiashvili" target="_blank"
+                    ><i class="facebook">Facebook</a
+                  >
+                </p>
+                <p>
+                  <a href=""
+                    ><i class="instagram"> Instagram</a
+                  >
+                </p>
+              </div>
+              <div class="links">
+                <h4 class="quick">Quick links</h4>
+                <p class="homee">Home</p>
+                <p><a href="#">Features</a></p>
+                <p><a href="#">Projects</a></p>
+                <p><a href="#">Contact</a></p>
+              </div>
+              <div class="details">
+                <h4 class="address">Address</h4>
+                <p>
+                  Greece,Georgia  <br />
+                  
+                </p>
+                <h4 class="mobile">Mobile</h4>
+                <p><a href="#">   </a></p>   
+            
+                <p><a href="#">       </a></p>
+              </div>
+            </div>
+            <footer>
+              <hr />
+            </footer>
+          </div>
+
+          <section id="hero">
+            <video autoplay loop muted playsinline id="video-background">
+              <source src="image/Technology Background Video Loop For Website.mp4" type="video/mp4">
+            </video>
+          </section>
+
+      </div>
+    </form>
+  </div>
+
+  <div class="bottom-container">
+    <div class="row">
+      <div class="col">
+        <a href="#" style="color:rgb(212, 210, 210)" class="btn">რეგისტრაცია</a>
+      </div>
+      <div class="col">
+        <a href="#" style="color:rgb(216, 213, 213)" class="btn">დაგავიწყდათ პაროლი?</a>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
